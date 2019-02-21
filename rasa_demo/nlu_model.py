@@ -25,4 +25,4 @@ def run():
 
 if __name__ == '__main__':
    train('./data/training_data.json', './config/config.yml', './models/nlu')
-   #run()
+   run()

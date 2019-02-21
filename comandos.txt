@@ -1,0 +1,19 @@
+pip3 install rasa_nlu[spacy]
+python3 -m spacy download en_core_web_md
+python3 -m spacy link en_core_web_md en
+
+!pip3 install gevent==1.2.2
+!pip3 install klein==17.10.0
+!pip3 install hyperlink==17.3.1
+!pip3 install boto3==1.5.20
+!pip3 install typing==3.6.2
+!pip3 install future==0.16.0
+!pip3 install six==1.11.0
+!pip3 install jsonschema==2.6.0
+!pip3 install matplotlib==2.1.0
+!pip3 install requests==2.18.4
+!pip3 install tqdm==4.19.5
+!pip3 install numpy==1.14.0
+!pip3 install simplejson==3.13.2
+!pip3 install cloudpickle==0.5.2
+!pip3 install msgpack-python==0.5.4

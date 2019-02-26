@@ -1,0 +1,401 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Hola",
+        "intent": "saludar",
+        "entities": []
+      },
+      {
+        "text": "chao",
+        "intent": "despedir",
+        "entities": []
+      },
+      {
+        "text": "Buenos días. ¿Sigue estando disponible?",
+        "intent": "informar-producto",
+        "entities": []
+      },
+      {
+        "text": " ¿Sigue estando disponible?",
+        "intent": "informar-producto",
+        "entities": []
+      },
+      {
+        "text": "Me queda bien el de Hayuelos para ir a verlas",
+        "intent": "confirmar-ubicaciones",
+        "entities": [
+          {
+            "start": 20,
+            "end": 29,
+            "value": "Hayuelos ",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Qué horario atienden ?",
+        "intent": "informar-horario",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "horario ",
+            "entity": "horario"
+          }
+        ]
+      },
+      {
+        "text": "Gracias, iré este fin de semana.",
+        "intent": "despedir",
+        "entities": []
+      },
+      {
+        "text": "¿Cómo realizo la compra?",
+        "intent": "informar-proceso-compra",
+        "entities": []
+      },
+      {
+        "text": "¿Tienen servicio contraentrega?",
+        "intent": "informar-tipo-pago",
+        "entities": [
+          {
+            "start": 16,
+            "end": 30,
+            "value": " contraentrega",
+            "entity": "tipo-pago"
+          }
+        ]
+      },
+      {
+        "text": "Realizan envíos fuera de Bogotá",
+        "intent": "informar-alcance-envios",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "Bogotá",
+            "entity": "location"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "fuera",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Buenos dias tiene disponible en Rojo? ",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 32,
+            "end": 36,
+            "value": "Rojo",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Tienes stock de las negras con azul?? ",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": " negras ",
+            "entity": "color"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "value": "azul",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Buenos días",
+        "intent": "saludo",
+        "entities": []
+      },
+      {
+        "text": "Aceptas pago por Efecty??",
+        "intent": "confirmar-tipo-pago",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "Efecty",
+            "entity": "empresa"
+          }
+        ]
+      },
+      {
+        "text": "Envío a a Santa Marta?",
+        "intent": "informar-alcance-envios",
+        "entities": [
+          {
+            "start": 10,
+            "end": 21,
+            "value": "Santa Marta",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "buen dia quisiera saber la disponibilidad de gafas en negro o blanco",
+        "intent": "informar-producto",
+        "entities": [
+          {
+            "start": 54,
+            "end": 59,
+            "value": "negro",
+            "entity": "color"
+          },
+          {
+            "start": 62,
+            "end": 68,
+            "value": "blanco",
+            "entity": "color"
+          },
+          {
+            "start": 45,
+            "end": 50,
+            "value": "gafas",
+            "entity": "tipo-producto"
+          }
+        ]
+      },
+      {
+        "text": "y te llegan blancas ? ",
+        "intent": "informar-producto-restock",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "blancas",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "que colores tienes disponible?",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "colores",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Listo ya realice la compra quiero las azules gracias ",
+        "intent": "despedir",
+        "entities": [
+          {
+            "start": 38,
+            "end": 44,
+            "value": "azules",
+            "entity": "color"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "value": "compra",
+            "entity": "accion-final"
+          }
+        ]
+      },
+      {
+        "text": "Buenas que color hay ",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "color ",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Azul hay ",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Azul",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Buenos dias, tiene en color azul?",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "azul",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Son Originales? ",
+        "intent": "informar-producto-calidad",
+        "entities": [
+          {
+            "start": 4,
+            "end": 14,
+            "value": "Originales",
+            "entity": "calidad"
+          }
+        ]
+      },
+      {
+        "text": "Estan disponibles en marco rojo?",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "rojo",
+            "entity": "color"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "marco",
+            "entity": "tipo-producto"
+          }
+        ]
+      },
+      {
+        "text": "Sirven para Mujer?",
+        "intent": "informar-producto-sexo",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "Mujer",
+            "entity": "sexo"
+          }
+        ]
+      },
+      {
+        "text": "Buenas tardes tiene disponible en negro? ",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 34,
+            "end": 39,
+            "value": "negro",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Buenos días tiene las negras ?",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "negras",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "para envío el día de hoy?",
+        "intent": "informar-tiempoEntrega",
+        "entities": [
+          {
+            "start": 21,
+            "end": 24,
+            "value": "hoy",
+            "entity": "fecha"
+          }
+        ]
+      },
+      {
+        "text": "Buenos días, deprontó vende las patas de estas gafas como repuestos?",
+        "intent": "informar-producto-repuesto",
+        "entities": [
+          {
+            "start": 47,
+            "end": 52,
+            "value": "gafas",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 58,
+            "end": 67,
+            "value": "repuestos",
+            "entity": "repuestos"
+          }
+        ]
+      },
+      {
+        "text": "buen dia. Podría subir una foto con la prueba de uveometro? Tengo una enfermedad en los ojos y necesito estar 100% seguro de la protección contra los rayos UV. ",
+        "intent": "informar-producto-atributo",
+        "entities": [
+          {
+            "start": 150,
+            "end": 158,
+            "value": "rayos UV",
+            "entity": "atributo-gafa"
+          }
+        ]
+      },
+      {
+        "text": "Buenas tardes, me puedes confirmar disponibilidad de colores",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 53,
+            "end": 60,
+            "value": "colores",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Buenas tardes, me puede confirmar disponibilidad de colores, si es tan amable?",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 52,
+            "end": 59,
+            "value": "colores",
+            "entity": "color"
+          }
+        ]
+      },
+      {
+        "text": "Hoy voy a estar cerca a hayuelos. Puedo recojerlas allá? En qué horarios? ",
+        "intent": "informar-tienda-horarios",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "hayuelos",
+            "entity": "location"
+          },
+          {
+            "start": 64,
+            "end": 72,
+            "value": "horarios",
+            "entity": "horario"
+          }
+        ]
+      }
+    ]
+  }
+}

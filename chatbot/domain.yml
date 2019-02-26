@@ -1,0 +1,75 @@
+slots:
+  tipo-producto:
+    type: text
+  location:
+    type: text
+  horario:
+    type: text
+  tipo-pago:
+    type: text
+  color:
+    type: text
+  empresa:
+    type: text
+  accion-final:
+    type: text
+  calidad:
+    type: text
+  sexo:
+    type: text
+  fecha:
+    type: text
+  repuestos:
+    type: text
+  atributo-gafa:
+    type: text
+
+intents:
+ - saludar
+ - despedir
+ - informar
+ - informar-tipo-pago
+ - informar-tienda-horarios
+ - informar-tiempoEntrega
+ - informar-producto-sexo
+ - informar-producto-restock
+ - informar-producto-repuesto
+ - informar-producto-calidad
+ - informar-producto-atributo
+ - informar-producto
+ - informar-proceso-compra
+ - informar-horario
+ - informar-color-producto
+ - informar-alcance-envios
+ - confirmar-ubicaciones
+ - confirmar-tipo-pago
+
+
+entities:
+ - location
+ - horario
+ - tipo-pago
+ - color
+ - empresa
+ - accion-final
+ - calidad
+ - sexo
+ - fecha
+ - repuestos
+ - atributo-gafa
+
+templates:
+  utter_saludar:
+    - '¡Hola! ¿Cómo puedo ayudar?'
+  utter_despedir:
+    - 'Hasta pronto'
+    - 'Adiós :('
+  utter_ask_location:
+    - '¿En que ubicacion?'
+
+
+actions:
+ - utter_saludar
+ - utter_despedir
+ - utter_ask_location
+ - action_weather

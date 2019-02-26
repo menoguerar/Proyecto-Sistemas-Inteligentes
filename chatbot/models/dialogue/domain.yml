@@ -1,0 +1,32 @@
+%YAML 1.1
+---
+actions:
+- utter_saludar
+- utter_despedir
+- utter_ask_location
+- action_weather
+config:
+  store_entities_as_slots: true
+entities:
+- location
+forms: []
+intents:
+- saludar:
+    use_entities: true
+- despedir:
+    use_entities: true
+- informar:
+    use_entities: true
+slots:
+  location:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_location:
+  - text: ¿En que ubicacion?
+  utter_despedir:
+  - text: Hasta pronto
+  - text: Adiós :(
+  utter_saludar:
+  - text: ¡Hola! ¿Cómo puedo ayudar?

@@ -1,0 +1,78 @@
+%YAML 1.1
+---
+actions:
+- utter_saludar
+- utter_despedir
+- utter_ask_location
+- action_weather
+entities:
+- sexo
+- repuestos
+- horario
+- tipo-pago
+- calidad
+- color
+- accion-final
+- fecha
+- location
+- atributo-gafa
+- empresa
+intents:
+- informar
+- saludar
+- despedir
+- informar-tipo-pago
+- informar-tienda-horarios
+- informar-tiempoEntrega
+- informar-producto-sexo
+- informar-producto-restock
+- informar-producto-repuesto
+- informar-producto-calidad
+- informar-producto-atributo
+- informar-producto
+- informar-proceso-compra
+- informar-horario
+- informar-color-producto
+- informar-alcance-envios
+- confirmar-ubicaciones
+- confirmar-tipo-pago
+- informar-ubicaciones
+- informar-tipo-venta
+- informar-proceso-compra-PSE
+- informar-envio-empresa
+- informar-envio-costo
+- informar-contacto
+- devolver-gracias
+slots:
+  accion-final:
+    type: text
+  atributo-gafa:
+    type: text
+  calidad:
+    type: text
+  color:
+    type: text
+  empresa:
+    type: text
+  fecha:
+    type: text
+  horario:
+    type: text
+  location:
+    type: text
+  repuestos:
+    type: text
+  sexo:
+    type: text
+  tipo-pago:
+    type: text
+  tipo-producto:
+    type: text
+templates:
+  utter_ask_location:
+  - text: ¿En que ubicacion?
+  utter_despedir:
+  - text: Hasta pronto
+  - text: Adiós :(
+  utter_saludar:
+  - text: ¡Hola! ¿Cómo puedo ayudar?

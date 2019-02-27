@@ -1,13 +1,13 @@
 slots:
   tipo-producto:
     type: text
+  color:
+    type: text
   location:
     type: text
   horario:
     type: text
   tipo-pago:
-    type: text
-  color:
     type: text
   empresa:
     type: text
@@ -27,7 +27,6 @@ slots:
 intents:
  - saludar
  - despedir
- - informar
  - informar-tipo-pago
  - informar-tienda-horarios
  - informar-tiempoEntrega
@@ -43,6 +42,14 @@ intents:
  - informar-alcance-envios
  - confirmar-ubicaciones
  - confirmar-tipo-pago
+ - informar-ubicaciones
+ - informar-tipo-venta
+ - informar-proceso-compra-PSE
+ - informar-envio-empresa
+ - informar-envio-costo
+ - informar-contacto
+ - devolver-gracias
+
 
 
 entities:

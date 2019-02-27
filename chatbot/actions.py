@@ -10,7 +10,8 @@ class ActionWeather(Action):
         return 'action_weather'
         
     def run(self, dispatcher, tracker, domain):
-        loc = tracker.get_slot("location")
+        loc = tracker.get_slot("tipo-producto")
+        print("<--------------",tracker.get_latest_entity_values)
         response = "El clima es una mierdaaaaaa en "+mylocation(loc)
         dispatcher.utter_message(response)
         return [SlotSet('location',loc)]
@@ -65,25 +66,32 @@ def confirmar_tipo_pago():
      Al comprarlo, selecciona la opción de que ud. recoge el producto"""
 
 
- def tipo_intent(intent):
-    switcher = {
-        1: informar_tipo_pago,
-        2: informar_tienda_horarios,
-        3: informar_tiempoEntrega,
-        4: informar_producto_sexo,
-        5: informar_producto_restock,
-        6: informar_producto_repuesto,
-        7: informar_producto_calidad,
-        8: informar_producto_atributo,
-        9: informar_producto,
-        10: informar_proceso_compra,
-        11: informar_horario,
-        12: informar_color_producto,
-        13: informar_alcance_envios,
-        14: confirmar_ubicaciones,
-        15: confirmar_tipo_pago
-    }
-    # Get the function from switcher dictionary
-    func = switcher.get(argument, lambda: "Invalid month")
-    # Execute the function
-    print func()
+#  def tipo_intent(intent):
+#     switcher = {
+#         1: informar_tipo_pago,
+#         2: informar_tienda_horarios,
+#         3: informar_tiempoEntrega,
+#         4: informar_producto_sexo,
+#         5: informar_producto_restock,
+#         6: informar_producto_repuesto,
+#         7: informar_producto_calidad,
+#         8: informar_producto_atributo,
+#         9: informar_producto,
+#         10: informar_proceso_compra,
+#         11: informar_horario,
+#         12: informar_color_producto,
+#         13: informar_alcance_envios,
+#         14: confirmar_ubicaciones,
+#         15: confirmar_tipo_pago
+#         16: informar-ubicaciones
+#         17: informar-tipo-venta
+#         18: informar-proceso-compra-PSE
+#         19: informar-envio-empresa
+#         20: informar-envio-costo
+#         21: informar-contacto
+#         22: devolver-gracias
+#     }
+#     Get the function from switcher dictionary
+#     func = switcher.get(argument, lambda: "Invalid month")
+#     Execute the function
+#     print func()

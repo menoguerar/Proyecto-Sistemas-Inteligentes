@@ -697,7 +697,7 @@
       },
       {
         "text": "es posible que me hagan el envio del producto por interrapidismo o servientrega sin yo tener que pagar el valor del envio en este momento y pagar el envio al recibir el producto?. pues este es el saldo que tengo en mercado pago y no puedo aumentarlo para pagar las gafas mas el envio. gracias ",
-        "intent": "informar-envio-tipo",
+        "intent": "informar-envio-empresa",
         "entities": [
           {
             "start": 278,

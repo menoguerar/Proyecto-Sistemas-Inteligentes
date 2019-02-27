@@ -33,7 +33,7 @@ def informar_producto_restock():
     return("BAse de datos")
 
 def informar_producto_repuesto():
-     return("Buen día, no contamos con los repuestos, solo el kit completo")
+     return("No contamos con los repuestos, solo el kit completo")
 def informar_producto_calidad():
     return("Son Rockbros originales")
 def informar_producto_atributo():
@@ -42,7 +42,7 @@ def informar_producto(tipo):
     return("bd tipo prodcuto")
 
 def informar_proceso_compra():
-    return """Lo puede realizar:
+    return """Lo puedes realizar:
     a) Visitando cualquiera de nuestros locales en Hayuelos y Salitre El Greco
     b) Por el pago a través de un enlace web de Mercado Pagos que le permite pagar en efectivo por Efecty
     o Baloto, por tarjeta de débito o por tarjeta de crédito
@@ -53,14 +53,14 @@ def informar_proceso_compra():
 def informar_color_producto():
     return "consulta bd"
 def informar_alcance_envios():
-    return"""Si a través de Mercado Envíos de Mercado Libre, o si gusta, realiza la compra indicando que recogera
+    return"""Si! a través de Mercado Envíos de Mercado Libre, o si gusta, realiza la compra indicando que recogera
     el producto y se lo enviamos por Envía y ud. Paga por el valor del transporte cuando reciba el producto.
     Por su tranquilidad, nosotros le enviaremos el número de guía para su seguimiento."""
 def confirmar_ubicaciones():
-    return "Puede pasar de lunes a viernes de 6.30pm á 8.30pm y los fines de semana de 8.00am á 8.00pm, por favor confirmar su hora de llegada al numero 320 3475909" 
+    return "Puedes pasar de lunes a viernes de 6.30pm á 8.30pm y los fines de semana de 8.00am á 8.00pm, por favor confirmar su hora de llegada al numero 320 3475909" 
     
 def confirmar_tipo_pago():
-    return """Puede tratar directamente con la opción de Mercado Envíos.
+    return """Puedes tratar directamente con la opción de Mercado Envíos.
      Si no figura, podemos enviárselo por otro medio y ud. paga el valor del transporte cuando reciba el producto.
      Al comprarlo, selecciona la opción de que ud. recoge el producto"""
 

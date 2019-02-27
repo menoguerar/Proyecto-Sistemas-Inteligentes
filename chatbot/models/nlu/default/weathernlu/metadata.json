@@ -1,8 +1,8 @@
 {
-    "language": "en",
+    "language": "es",
     "pipeline": [
         {
-            "model": "en",
+            "model": "es",
             "case_sensitive": false,
             "name": "nlp_spacy",
             "class": "rasa_nlu.utils.spacy_utils.SpacyNLP"
@@ -82,6 +82,6 @@
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20190225-144022",
+    "trained_at": "20190227-005822",
     "rasa_nlu_version": "0.14.3"
 }

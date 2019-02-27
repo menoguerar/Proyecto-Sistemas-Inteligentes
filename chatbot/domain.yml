@@ -74,6 +74,8 @@ templates:
     - 'Adiós.'
   utter_ask_location:
     - '¿En que ubicacion?'
+  utter_ask_tipo_producto:
+    - '¿En que Tipo de producto estas interesado?'
   utter_informar_tipo_pago:
     -  'Lo tenemos disponible en Bogotá, desde el barrio Venecia al sur, hasta la 170 de la Autopista Norte. Por favor indíquenos su dirección, su número móvil y el horario en que podemos realizar la entrega.'
   utter_informar_tienda_horarios:
@@ -112,6 +114,7 @@ actions:
  - utter_saludar
  - utter_despedir
  - utter_ask_location
+ - utter_ask_tipo_producto
  - utter_informar_tipo_pago
  - utter_informar_tienda_horarios
  - utter_informar_tiempoEntrega_fuera
@@ -121,4 +124,4 @@ actions:
  - utter_informar_alcance_envios
  - utter_confirmar_ubicaciones
  - utter_confirmar_tipo_pago
- - actions.action_store
+ - action_store

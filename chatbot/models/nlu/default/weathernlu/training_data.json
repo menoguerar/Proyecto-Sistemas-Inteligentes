@@ -6,22 +6,6 @@
         "text": "Hola"
       },
       {
-        "intent": "despedir",
-        "text": "adiós"
-      },
-      {
-        "intent": "informar",
-        "entities": [
-          {
-            "start": 24,
-            "end": 30,
-            "value": "Berlín",
-            "entity": "location"
-          }
-        ],
-        "text": "¿Como esta el clima de Berlín  en el momento?"
-      },
-      {
         "intent": "saludar",
         "text": "hey"
       },
@@ -47,10 +31,6 @@
       },
       {
         "intent": "despedir",
-        "text": "chao"
-      },
-      {
-        "intent": "despedir",
         "text": "adiós"
       },
       {
@@ -66,160 +46,1178 @@
         "text": "te veo luego"
       },
       {
-        "intent": "informar",
-        "text": "¿Cual es el clima de hoy?"
+        "intent": "despedir",
+        "text": "chao"
       },
       {
-        "intent": "informar",
+        "intent": "informar-producto",
+        "text": "Buenos días. ¿Sigue estando disponible?"
+      },
+      {
+        "intent": "informar-producto",
+        "text": " ¿Sigue estando disponible?"
+      },
+      {
+        "intent": "confirmar-ubicaciones",
         "entities": [
           {
-            "start": 28,
-            "end": 34,
-            "value": "London",
+            "start": 20,
+            "end": 29,
+            "value": "Hayuelos ",
             "entity": "location"
           }
         ],
-        "text": "¿Cual es el clima de hoy en London?"
+        "text": "Me queda bien el de Hayuelos para ir a verlas"
       },
       {
-        "intent": "informar",
+        "intent": "informar-horario",
         "entities": [
           {
-            "start": 28,
-            "end": 33,
-            "value": "Paris",
-            "entity": "location"
+            "start": 4,
+            "end": 12,
+            "value": "horario ",
+            "entity": "horario"
           }
         ],
-        "text": "Muéstrame qué clima hace en París"
+        "text": "Qué horario atienden ?"
       },
       {
-        "intent": "informar",
+        "intent": "despedir",
+        "text": "Gracias, iré este fin de semana."
+      },
+      {
+        "intent": "informar-proceso-compra",
+        "text": "¿Cómo realizo la compra?"
+      },
+      {
+        "intent": "informar-tipo-pago",
         "entities": [
           {
-            "start": 33,
-            "end": 40,
-            "value": "Vilnius",
-            "entity": "location"
+            "start": 16,
+            "end": 30,
+            "value": " contraentrega",
+            "entity": "tipo-pago"
           }
         ],
-        "text": "¿Me pregunto cuál es el clima en Vilnius en este momento?"
+        "text": "¿Tienen servicio contraentrega?"
       },
       {
-        "intent": "informar",
-        "text": "¿Que clima hace?"
-      },
-      {
-        "intent": "informar",
-        "text": "Dime el clima"
-      },
-      {
-        "intent": "informar",
+        "intent": "informar-alcance-envios",
         "entities": [
           {
             "start": 25,
-            "end": 34,
-            "value": "Barcelona",
+            "end": 31,
+            "value": "Bogotá",
+            "entity": "location"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "fuera",
             "entity": "location"
           }
         ],
-        "text": "¿Hace buen clima hoy en Barcelona?"
+        "text": "Realizan envíos fuera de Bogotá"
       },
       {
-        "intent": "informar",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 32,
+            "end": 36,
+            "value": "Rojo",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenos dias tiene disponible en Rojo? "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": " negras ",
+            "entity": "color"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "value": "azul",
+            "entity": "color"
+          }
+        ],
+        "text": "Tienes stock de las negras con azul?? "
+      },
+      {
+        "intent": "saludar",
+        "text": "Buenos días"
+      },
+      {
+        "intent": "confirmar-tipo-pago",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "Efecty",
+            "entity": "empresa"
+          }
+        ],
+        "text": "Aceptas pago por Efecty??"
+      },
+      {
+        "intent": "informar-alcance-envios",
         "entities": [
           {
             "start": 10,
-            "end": 16,
-            "value": "London",
+            "end": 21,
+            "value": "Santa Marta",
             "entity": "location"
           }
         ],
-        "text": "Hoy voy a London y me pregunto ¿Qué clima hace allí?"
+        "text": "Envío a a Santa Marta?"
       },
       {
-        "intent": "informar",
+        "intent": "informar-producto",
+        "entities": [
+          {
+            "start": 54,
+            "end": 59,
+            "value": "negro",
+            "entity": "color"
+          },
+          {
+            "start": 62,
+            "end": 68,
+            "value": "blanco",
+            "entity": "color"
+          },
+          {
+            "start": 45,
+            "end": 50,
+            "value": "gafas",
+            "entity": "tipo-producto"
+          }
+        ],
+        "text": "buen dia quisiera saber la disponibilidad de gafas en negro o blanco"
+      },
+      {
+        "intent": "informar-producto-restock",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "blancas",
+            "entity": "color"
+          }
+        ],
+        "text": "y te llegan blancas ? "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "colores",
+            "entity": "color"
+          }
+        ],
+        "text": "que colores tienes disponible?"
+      },
+      {
+        "intent": "despedir",
+        "entities": [
+          {
+            "start": 38,
+            "end": 44,
+            "value": "azules",
+            "entity": "color"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "value": "compra",
+            "entity": "accion-final"
+          }
+        ],
+        "text": "Listo ya realice la compra quiero las azules gracias "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "color ",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenas que color hay "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Azul",
+            "entity": "color"
+          }
+        ],
+        "text": "Azul hay "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "azul",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenos dias, tiene en color azul?"
+      },
+      {
+        "intent": "informar-producto-calidad",
+        "entities": [
+          {
+            "start": 4,
+            "end": 14,
+            "value": "Originales",
+            "entity": "calidad"
+          }
+        ],
+        "text": "Son Originales? "
+      },
+      {
+        "intent": "informar-color-producto",
         "entities": [
           {
             "start": 27,
-            "end": 36,
-            "value": "Amsterdam",
-            "entity": "location"
+            "end": 31,
+            "value": "rojo",
+            "entity": "color"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "marco",
+            "entity": "tipo-producto"
           }
         ],
-        "text": "Estoy planeando mi viaje a Amsterdam. ¿Qué clima hace allí?"
+        "text": "Estan disponibles en marco rojo?"
       },
       {
-        "intent": "informar",
+        "intent": "informar-producto-sexo",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "Mujer",
+            "entity": "sexo"
+          }
+        ],
+        "text": "Sirven para Mujer?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 34,
+            "end": 39,
+            "value": "negro",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenas tardes tiene disponible en negro? "
+      },
+      {
+        "intent": "informar-color-producto",
         "entities": [
           {
             "start": 22,
             "end": 28,
-            "value": "Dublin",
-            "entity": "location"
+            "value": "negras",
+            "entity": "color"
           }
         ],
-        "text": "Muéstrame el clima en Dublin, por favor"
+        "text": "Buenos días tiene las negras ?"
       },
       {
-        "intent": "informar",
+        "intent": "informar-tiempoEntrega",
         "entities": [
           {
-            "start": 3,
-            "end": 9,
-            "value": "London",
-            "entity": "location"
+            "start": 21,
+            "end": 24,
+            "value": "hoy",
+            "entity": "fecha"
           }
         ],
-        "text": "En London"
+        "text": "para envío el día de hoy?"
       },
       {
-        "intent": "informar",
+        "intent": "informar-producto-repuesto",
         "entities": [
           {
-            "start": 0,
-            "end": 9,
-            "value": "Lithuania",
-            "entity": "location"
+            "start": 47,
+            "end": 52,
+            "value": "gafas",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 58,
+            "end": 67,
+            "value": "repuestos",
+            "entity": "repuestos"
           }
         ],
-        "text": "Lithuania"
+        "text": "Buenos días, deprontó vende las patas de estas gafas como repuestos?"
       },
       {
-        "intent": "informar",
+        "intent": "informar-producto-atributo",
         "entities": [
           {
-            "start": 15,
+            "start": 150,
+            "end": 158,
+            "value": "rayos UV",
+            "entity": "atributo-gafa"
+          }
+        ],
+        "text": "buen dia. Podría subir una foto con la prueba de uveometro? Tengo una enfermedad en los ojos y necesito estar 100% seguro de la protección contra los rayos UV. "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 53,
+            "end": 60,
+            "value": "colores",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenas tardes, me puedes confirmar disponibilidad de colores"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 52,
+            "end": 59,
+            "value": "colores",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenas tardes, me puede confirmar disponibilidad de colores, si es tan amable?"
+      },
+      {
+        "intent": "informar-tienda-horarios",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "hayuelos",
+            "entity": "location"
+          },
+          {
+            "start": 64,
+            "end": 72,
+            "value": "horarios",
+            "entity": "horario"
+          }
+        ],
+        "text": "Hoy voy a estar cerca a hayuelos. Puedo recojerlas allá? En qué horarios? "
+      },
+      {
+        "intent": "informar-horario",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "horario",
+            "entity": "horario"
+          }
+        ],
+        "text": "En que horario puedo pasar a recogerlas? "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "negro",
+            "entity": "color"
+          }
+        ],
+        "text": "Buen dia, tiene disponible en color negro?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 7,
             "end": 21,
-            "value": "Italia",
-            "entity": "location"
+            "value": "negro con azul",
+            "entity": "color"
           }
         ],
-        "text": "Oh, perdon, en Italia"
+        "text": "Tienen negro con azul? "
       },
       {
-        "intent": "informar",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "negro",
+            "entity": "color"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "marco",
+            "entity": "tipo-producto"
+          }
+        ],
+        "text": "Buenas noches en marco negro hay disponibles?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "color",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenos dias, puedo escojer el color? O las que ustedes envien?"
+      },
+      {
+        "intent": "informar-tipo-venta",
+        "entities": [
+          {
+            "start": 18,
+            "end": 27,
+            "value": "por mayor",
+            "entity": "tipo-venta"
+          }
+        ],
+        "text": "Realizas ventas a por mayor?? "
+      },
+      {
+        "intent": "informar-tiempoEntrega",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "envio inmediato",
+            "entity": "tipo-envio"
+          }
+        ],
+        "text": "Disponible para envio inmediato ?"
+      },
+      {
+        "intent": "informar-envio-costo",
         "entities": [
           {
             "start": 17,
-            "end": 24,
-            "value": "Vilnius",
+            "end": 22,
+            "value": "envío",
+            "entity": "tipo-envio"
+          }
+        ],
+        "text": "Me interesa,, el envío es gratis?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 24,
+            "end": 29,
+            "value": "marco",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "negro",
+            "entity": "color"
+          },
+          {
+            "start": 46,
+            "end": 56,
+            "value": "originales",
+            "entity": "calidad"
+          }
+        ],
+        "text": "Buen dia, disponible en marco negro? Rockbros originales? "
+      },
+      {
+        "intent": "informar-envio-costo",
+        "entities": [
+          {
+            "start": 80,
+            "end": 92,
+            "value": "envio gratis",
+            "entity": "tipo-envio"
+          }
+        ],
+        "text": "Podrias vendermelas en 60 mil para aprovechar el beneficio de mercado puntos de envio gratis?"
+      },
+      {
+        "intent": "informar-producto-repuesto",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "marco",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "value": "aparte",
+            "entity": "repuestos"
+          }
+        ],
+        "text": "¿Venden el marco de lentes medicados aparte? se me rompio y es lo unico que tengo que reemplazar. Quedo atento."
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "blanco",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenas tardes Hay disponible blanco"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 48,
+            "end": 56,
+            "value": "bicolor",
+            "entity": "color"
+          }
+        ],
+        "text": "Gracias Dentro de los lentes que trae alguno en bicolor tipo espejo?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "Marco",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "value": "blanco",
+            "entity": "color"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "value": "color",
+            "entity": "color"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "value": "color",
+            "entity": ""
+          }
+        ],
+        "text": "Buen dia Marco en color blanco o negro con azul?"
+      },
+      {
+        "intent": "informar-contacto",
+        "entities": [
+          {
+            "start": 79,
+            "end": 87,
+            "value": "no puedo",
+            "entity": "problema"
+          }
+        ],
+        "text": "esta mañana hice una compra para las gafas y dije que recogía en fontibon pero no puedo recogerlas, como hago para pagar ahora el domicilio!!? "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 27,
+            "end": 34,
+            "value": "blancas",
+            "entity": "color"
+          },
+          {
+            "start": 48,
+            "end": 66,
+            "value": "blancas combinadas",
+            "entity": "color"
+          }
+        ],
+        "text": "Por eso te digó, la tienes blancas únicamente ó blancas combinadas!!?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 29,
+            "end": 45,
+            "value": "blanco con negro",
+            "entity": "color"
+          }
+        ],
+        "text": "tienes con el marco de color blanco con negro!!?"
+      },
+      {
+        "intent": "confirmar-ubicaciones",
+        "entities": [
+          {
+            "start": 32,
+            "end": 39,
+            "value": "Bogotá ",
             "entity": "location"
           }
         ],
-        "text": "Dime el clima en Vilnius"
+        "text": "Buen día. ¿Se pueden recoger en Bogotá y "
       },
       {
-        "intent": "informar",
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "colores",
+            "entity": "color"
+          }
+        ],
+        "text": "que colores tiene disponibles?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "text": "buenas noches,Disponible color negro?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "negro",
+            "entity": "color"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "value": "color ",
+            "entity": "color"
+          }
+        ],
+        "text": "buenas noches,Disponible color negro?"
+      },
+      {
+        "intent": "informar-envio-empresa",
+        "entities": [
+          {
+            "start": 278,
+            "end": 283,
+            "value": "envio",
+            "entity": "tipo-envio"
+          },
+          {
+            "start": 67,
+            "end": 80,
+            "value": "servientrega ",
+            "entity": "empresa"
+          },
+          {
+            "start": 50,
+            "end": 65,
+            "value": "interrapidismo ",
+            "entity": "empresa"
+          }
+        ],
+        "text": "es posible que me hagan el envio del producto por interrapidismo o servientrega sin yo tener que pagar el valor del envio en este momento y pagar el envio al recibir el producto?. pues este es el saldo que tengo en mercado pago y no puedo aumentarlo para pagar las gafas mas el envio. gracias "
+      },
+      {
+        "intent": "informar-tiempoEntrega",
+        "entities": [
+          {
+            "start": 45,
+            "end": 53,
+            "value": "Medellín",
+            "entity": "location"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "tiempo",
+            "entity": "atributo-envio"
+          }
+        ],
+        "text": "Buenas noches. ¿en cuanto tiempo entregan en Medellín? "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "marco",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "value": "rojo",
+            "entity": "color"
+          }
+        ],
+        "text": "Hola buenos días, necesito el marco rojo, está disponible?"
+      },
+      {
+        "intent": "confirmar-ubicaciones",
+        "text": "donde puedo pasar a recogerlo.?"
+      },
+      {
+        "intent": "informar-envio-costo",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "envío",
+            "entity": "tipo-envio"
+          }
+        ],
+        "text": "Cuál sería el costo final con envío?"
+      },
+      {
+        "intent": "informar-producto",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "gafas",
+            "entity": "tipo-producto"
+          }
+        ],
+        "text": "Que traen las gafas?"
+      },
+      {
+        "intent": "informar-tipo-pago",
+        "text": "Y que medios de pago puedo usar?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "marco",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "value": "rojo",
+            "entity": "color"
+          }
+        ],
+        "text": "Hola buenos días, necesito el marco rojo, está disponible? "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "marco ",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "negro ",
+            "entity": "color"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "value": "rojo ",
+            "entity": "color"
+          }
+        ],
+        "text": "tambien tiene el marco negro con rojo que seria para otra persona"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "azul ",
+            "entity": "color"
+          },
+          {
+            "start": 37,
+            "end": 42,
+            "value": "negro",
+            "entity": "color"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "marco",
+            "entity": "tipo-producto"
+          }
+        ],
+        "text": "buenas tarde tiene el marco azul con negro? "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "gafas ",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 37,
+            "end": 42,
+            "value": "negro",
+            "entity": "color"
+          }
+        ],
+        "text": "buenos dias tiene las gafas en marco negro?"
+      },
+      {
+        "intent": "informar-color-producto",
         "entities": [
           {
             "start": 30,
             "end": 36,
-            "value": "Italia",
+            "value": "MARCO ",
+            "entity": "tipo-producto"
+          },
+          {
+            "start": 48,
+            "end": 54,
+            "value": "BLANCO",
+            "entity": "color"
+          }
+        ],
+        "text": "BUENOS DIAS, NECESITO DOS CON MARCO BLANCO TODO BLANCO. LAS TIENES DISPONIBLES?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 30,
+            "end": 34,
+            "value": "azul",
+            "entity": "color"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "negro",
+            "entity": "color"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "value": "marco ",
+            "entity": "tipo-producto"
+          }
+        ],
+        "text": "buenos dias tiene marco color azul con negro"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "negro ",
+            "entity": "color"
+          },
+          {
+            "start": 71,
+            "end": 77,
+            "value": "blanco",
+            "entity": "color"
+          }
+        ],
+        "text": "buenos dias, en color negro el hilo de la costura es del mismo color o blanco como se ve en l foto?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 21,
+            "end": 29,
+            "value": "desierto",
+            "entity": "color"
+          }
+        ],
+        "text": "Hola tienes en color desierto "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "negro",
+            "entity": "color"
+          }
+        ],
+        "text": "Tiene disponible negro?"
+      },
+      {
+        "intent": "informar-envio-costo",
+        "entities": [
+          {
+            "start": 48,
+            "end": 59,
+            "value": "Santa Marta",
             "entity": "location"
           }
         ],
-        "text": "Las condiciones climáticas en Italia"
+        "text": "Por favo disponibilidad y precio con el envio a Santa Marta"
+      },
+      {
+        "intent": "informar-proceso-compra",
+        "entities": [
+          {
+            "start": 38,
+            "end": 56,
+            "value": "realizar la compra",
+            "entity": "accion-compra"
+          }
+        ],
+        "text": "Que pena con ud como podria hacer par realizar la compra y no quede andando la compra y me salga mala calificacion."
+      },
+      {
+        "intent": "informar-proceso-compra-PSE",
+        "entities": [
+          {
+            "start": 112,
+            "end": 123,
+            "value": "bancolombia",
+            "entity": "banco"
+          }
+        ],
+        "text": "La verdad voy a hacer la transferencia para el pago pero como es la primera ves que compro a nombre mio y tengo bancolombia"
+      },
+      {
+        "intent": "informar-ubicaciones",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "bogota",
+            "entity": "location"
+          }
+        ],
+        "text": "Si estan aqui en bogota donde podria pasar por el. Mañana salgo de viaje..."
+      },
+      {
+        "intent": "informar-producto-restock",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "llega",
+            "entity": "accion-producto"
+          }
+        ],
+        "text": "Cuando le llega camuflados.."
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 30,
+            "end": 40,
+            "value": "camuflaje ",
+            "entity": "textura"
+          },
+          {
+            "start": 46,
+            "end": 51,
+            "value": "color",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenas noches... lo tiene con camuflaje y que color?"
+      },
+      {
+        "intent": "informar-producto",
+        "text": "Ah! Le sirve para un samsung note 9?"
+      },
+      {
+        "intent": "informar-envio-costo",
+        "entities": [
+          {
+            "start": 31,
+            "end": 40,
+            "value": "medellin ",
+            "entity": "location"
+          }
+        ],
+        "text": "Buenas noches...a la ciudad de medellin cuanto costaría con envío"
+      },
+      {
+        "intent": "informar-envio-empresa",
+        "text": "Gracias Por favor si le queda fácil decirme el número de la guía y/o x q empresa lo envía para hacerle el seguimiento."
+      },
+      {
+        "intent": "informar-ubicaciones",
+        "text": "Ok entendido. Si hago la oferta puedo pasar a tu punto retirarlo y pagar? "
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "negro",
+            "entity": "color"
+          }
+        ],
+        "text": "Cordial saludo, tienes negro? y es igual al que esta publicado?"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "negro ",
+            "entity": "color"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "value": "gris ",
+            "entity": "color"
+          }
+        ],
+        "text": "Gracias, es negro o gris el color? Cordial Saludo"
+      },
+      {
+        "intent": "devolver-gracias",
+        "text": "Gracias por las fotografias, estoy pendiente."
+      },
+      {
+        "intent": "informar-color-producto",
+        "text": "Buenos dias, que color tiene disponible?"
+      },
+      {
+        "intent": "informar-tiempoEntrega",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "bogota ",
+            "entity": "Bogota"
+          }
+        ],
+        "text": "Buen dia en bogota cuanto demora el envío"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 28,
+            "end": 34,
+            "value": "negro ",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenos días tienen en color negro en este momento"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 37,
+            "end": 42,
+            "value": "negro",
+            "entity": "color"
+          }
+        ],
+        "text": "Hola, cuéntame si ya tienes de color negro"
+      },
+      {
+        "intent": "informar-producto-restock",
+        "text": "Cuando les llega en negro"
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "negro",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenas tardes tienen en color negro"
+      },
+      {
+        "intent": "informar-ubicaciones",
+        "text": "Buenas, me interesa, donde lo puedo recoger mañana."
+      },
+      {
+        "intent": "informar-color-producto",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "negro ",
+            "entity": "color"
+          }
+        ],
+        "text": "Buenas noches tiene de color negro gracias"
+      },
+      {
+        "intent": "informar-producto-atributo",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "correa ",
+            "entity": "atributo-maleta"
+          }
+        ],
+        "text": "Saludos. No viene correa para llevarla también como manos libres?"
+      },
+      {
+        "intent": "informar-producto-atributo",
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "bolsillo ",
+            "entity": "atributo-maleta"
+          }
+        ],
+        "text": "el bolsillo para portar el celular de que tamaño es, aguanta un celular de 5.5\" o uno de 6\"?"
       }
     ],
     "regex_features": [],

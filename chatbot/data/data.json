@@ -7,6 +7,56 @@
         "entities": []
       },
       {
+        "text": "hey",
+        "intent": "saludar",
+        "entities": []
+      },
+      {
+        "text": "hola",
+        "intent": "saludar",
+        "entities": []
+      },
+      {
+        "text": "holi",
+        "intent": "saludar",
+        "entities": []
+      },
+      {
+        "text": "Que tal",
+        "intent": "saludar",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "saludar",
+        "entities": []
+      },
+      {
+        "text": "hola tu",
+        "intent": "saludar",
+        "entities": []
+      },
+      {
+        "text": "adiós",
+        "intent": "despedir",
+        "entities": []
+      },
+      {
+        "text": "chao chao",
+        "intent": "despedir",
+        "entities": []
+      },
+      {
+        "text": "nos vemos",
+        "intent": "despedir",
+        "entities": []
+      },
+      {
+        "text": "te veo luego",
+        "intent": "despedir",
+        "entities": []
+      },
+      {
         "text": "chao",
         "intent": "despedir",
         "entities": []
@@ -117,7 +167,7 @@
       },
       {
         "text": "Buenos días",
-        "intent": "saludo",
+        "intent": "saludar",
         "entities": []
       },
       {

@@ -11,8 +11,8 @@ def train_nlu(data, configs, model_dir):
 	
 def run_nlu():
 	interpreter = Interpreter.load('./models/nlu/default/weathernlu')
-	print(interpreter.parse(u"Estoy planeando mis vacaciones a Lithuania. Me pregunto ¿Qué tiempo hace allí?"))
+	print(interpreter.parse(u"Buenos días tienen gafas en color negro en este momento?"))
 	
 if __name__ == '__main__':
 	train_nlu('./data/data.json', 'config_spacy.json', './models/nlu')
-	#run_nlu()
+	run_nlu()

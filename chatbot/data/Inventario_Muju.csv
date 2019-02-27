@@ -1,0 +1,114 @@
+﻿Número,Descripción,Atributo,Código,Cantidad,Ubicación VC,Ubicación AC,Verificación
+1,Cojín cinturon carro azul,Azul,A0010,0,0,0,0
+2,Cojín cinturon carro rosado,Rosado,A0011,2,2,0,0
+3,Cojín cinturon carro gris,Gris,A0012,0,0,0,0
+4,Gorro audifonos bluetooth rojo,Rojo,A0020,1,1,0,0
+5,Gorro audifonos bluetooth negro,Negro,A0021,0,0,0,0
+6,Baterías AG10-LR1130,N/A,B0010,26,22,4,0
+7,Baterías AG13-LR44,N/A,B0020,20,2,18,0
+8,Baterías CR2032,N/A,B0030,0,0,0,0
+9,Baterias AA,N/A,B0040,13,10,3,0
+10,Baterías AAA,N/A,B0050,15,9,6,0
+11,Bocina alarma-bicicleta,N/A,C0010,0,0,0,0
+12,Cojin para sillín bicicleta rojo,Rojo,C0020,0,0,0,0
+13,Cojin para sillín bicicleta azul,Azul,C0021,0,0,0,0
+14,Luz delantera bicicleta,N/A,C0030,2,2,0,0
+15,Luz solar trasera,N/A,C0040,20,9,11,0
+16,Gafas ciclista verdes,Verde,C0050,0,0,0,0
+17,Gafas ciclista negras,Negro,C0051,0,0,0,0
+18,Odómetro,N/A,C0060,0,0,0,0
+19,Luz LED para llanta bici,N/A,C0070,22,13,9,0
+20,Cojín sillín Rockbros Rojo,Rojo,C0080,2,1,1,0
+21,Cojín sillín Rockbros Verde,Verde,C0081,1,1,0,0
+22,Cojín sillín Rockbros Azul,Azul,C0082,1,1,0,0
+23,Cojín sillín Rockbros Azul-Claro,Azul-Claro,C0083,0,0,0,0
+24,Gafas ciclista RB rojas,Rojo,C0090,8,3,5,0
+25,Gafas ciclista RB azul,Azul,C0091,9,3,6,0
+26,Gafas ciclista RB negras,Negro,C0092,8,4,4,0
+27,Gafas ciclista RB blancas,Blaco,C0093,1,1,0,0
+28,Maleta bicicleta RB roja,Rojo,C0100,0,0,0,0
+29,Maleta bicicleta RB azul,Azul,C0101,0,0,0,0
+30,Maleta bicicleta RB verde,Verde,C0102,0,0,0,0
+31,Guantes ciclismo TS RB negro+M,Negro + M,C0110,0,0,0,0
+32,Guantes ciclismo TS RB azul+M,Azul + M,C0111,0,0,0,0
+33,Guantes ciclismo TS RB rojo+S,Rojo + S,C0112,0,0,0,0
+34,Mitones ciclismo RB gris+M,Gris + M,C0120,3,1,2,0
+35,Mitones ciclismo RB púrpura+S,Púrpura + S,C0121,0,0,0,0
+36,Mitones ciclismo RB rojo+L,Rojo + L,C0122,1,1,0,0
+37,Mitones ciclismo RB gris+L,Gris + L,C0123,3,2,1,0
+38,Mitones ciclismo RB azul+L,Azul + L,C0124,2,0,2,0
+39,Computador bicicleta WB rojo,Rojo,C0130,1,0,1,0
+40,Computador bicicleta WB verde,Verde,C0131,1,0,1,0
+41,Computador bicicleta WB azul,Azul,C0132,2,1,1,0
+42,Mitones ciclismo spider RB rojo+M,Rojo + M,C0140,0,0,0,0
+43,Mitones ciclismo spider RB azul+M,Azul + M,C0141,0,0,0,0
+44,Chaqueta ciclismo RB naranja,Naranja,C0150,0,0,0,0
+45,Mini bomba para inflar llantas,N/A,C0160,3,1,2,0
+46,Guantes antideslizantes RB negro,Negro,C0170,0,0,0,0
+47,Guantes antideslizantes RB azul,Azul,C0171,0,0,0,0
+48,Guantes antideslizantes RB rojo,rojo,C0172,1,0,1,0
+49,Alforja ciclismo CoolChange roja,Rojo,C0180,0,0,0,0
+50,Alforja ciclismo CoolChange beige,Beige,C0181,0,0,0,0
+51,Juego de herramienta 16/1 RB,N/A,C0190,3,1,2,0
+52,Guantes ciclismo spider azul+M,Azul + M,C0200,3,2,1,0
+53,Guantes ciclismo spider azul+L,Azul + L,C0201,0,0,0,0
+54,Guantes ciclismo spider gris+M,Gris + M,C0202,0,0,0,0
+55,Guantes ciclismo spider gris+L,Gris + L,C0203,2,2,0,0
+56,Guantes ciclismo spider rojo+L,Rojo + L,C0204,1,1,0,0
+57,Guantes ciclismo spider rojo+M,Rojo + M,C0205,0,0,0,0
+58,Guantes ciclismo spider gris+XL,Gris + XL,C0206,3,3,0,0
+59,Gafas deportivas multicolor,N/A,C0210,1,0,1,0
+60,Mascara antipolución RB negro,Negro,C0220,1,1,0,0
+61,Mascara antipolución RB gris,Gris,C0221,2,1,1,0
+62,Kit guardabarros WB negro,Negro,C0230,3,1,2,0
+63,Espejo retrovisor bicicleta,N/A,C0240,0,0,0,0
+64,Parche llanta bicicleta RB,N/A,C0250,9,5,4,0
+65,Luz válvula llanta multipatrón,N/A,C0260,5,2,3,0
+66,Luz frontal bicicleta recargable,N/A,C0270,1,0,1,0
+67,Computador bicicleta RB,N/A,C0280,0,0,0,0
+68,Correa para pedal RB negro,Negro,C0290,0,0,0,0
+69,Maleta portaherramientas RB,N/A,C0300,0,0,0,0
+70,Mug silicona 340ml blanco,Blanco,H0010,0,0,0,0
+71,Mug silicona 340ml púrpura,Púrpura,H0011,3,1,2,0
+72,Cojín LED rosado,Rosado,H0020,0,0,0,0
+73,Cojín LED amarillo,Amarillo,H0021,0,0,0,0
+74,Tapete dibujar mágico,N/A,J0010,1,0,1,0
+75,Árbol de madera,N/A,J0020,0,0,0,0
+76,Rompecabezas 3D,N/A,J0030,0,0,0,0
+77,Caja aprender a sumar,N/A,J0040,0,0,0,0
+78,Rompecabezas 3D Kongming,N/A,J0050,1,0,1,0
+79,Mnifigura SW Darth-Vader,DV,J0060,3,2,1,0
+80,Mnifigura SW R2D2,R2D2,J0061,3,2,1,0
+81,Mnifigura SW C3PO,C3PO,J0062,3,2,1,0
+82,Mnifigura SW Kylo-Ren,KR,J0063,2,2,0,0
+83,Mnifigura SW Emperor,Emperor,J0064,4,2,2,0
+84,Mnifigura SW Stormtrooper,ST,J0065,1,1,0,0
+85,Mnifigura SW Yoda,Yoda,J0066,4,2,2,0
+86,Mnifigura SW Grievous,Grievous,J0070,3,1,2,0
+87,Mnifigura DC Batman,Batman,J0071,2,0,2,0
+88,Mnifigura DC Catwoman,Catwoman,J0072,2,0,2,0
+89,Mnifigura DC Jocker,Jocker,J0073,2,0,2,0
+90,Mnifigura DC Harley-Queen,HQ,J0074,3,1,2,0
+91,Helicóptero de rescate t/Lego,N/A,J0090,2,1,1,0
+92,Set carro de snacks t/Lego,N/A,J0100,3,1,2,0
+93,Set carro policia t/Lego,N/A,J0110,0,0,0,0
+94,Set constructor t/Lego estibador,Estibador,J0120,0,0,0,0
+95,Set constructor t/Lego limpiador,Limpiador,J0121,4,2,2,0
+96,Set formula 1 t/Lego,N/A,J0130,3,0,3,0
+97,Set camión transporte t/Lego,N/A,J0140,3,2,1,0
+98,Minimaleta táctica negra,Negro,O0010,21,1,20,0
+99,Minimaleta táctica verde militar,Verde militar,O0011,0,0,0,0
+100,Minimaleta táctica verde ruinas,Verde ruinas,O0012,0,0,0,0
+101,Minimaleta táctica caqui,Caqui,O0013,7,1,6,0
+102,Minimaleta táctica sansha,Sansha,O0014,0,0,0,0
+103,Minimaleta táctica acu,Acu,O0015,0,0,0,0
+104,Láser de alta potencia verde,Verde,O0020,3,2,1,0
+105,Maleta antirobo gris,Gris,O0030,2,1,1,0
+106,Bolso cuero negro-rojo,Negro-Rojo,R0010,0,0,0,0
+107,Billetera cuero negra,Negro,R0020,1,0,1,0
+108,Cartera cuero mini vinotinto,Vinotinto,R0030,1,0,1,0
+109,Morral cuero miel,Negro-miel,R0040,0,0,0,0
+110,Mini cartera MF cuadros,Negro,R0050,0,0,0,0
+111,Cartera MF cuadros roja,Rojo,R0060,0,0,0,0
+112,Bolso ancho café,Café,R0070,0,0,0,0
+

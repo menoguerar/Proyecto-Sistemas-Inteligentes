@@ -430,7 +430,7 @@
       },
       {
         "text": "Hoy voy a estar cerca a hayuelos. Puedo recojerlas allá? En qué horarios? ",
-        "intent": "informar-tienda-horarios",
+        "intent": "informar-horario",
         "entities": [
           {
             "start": 24,

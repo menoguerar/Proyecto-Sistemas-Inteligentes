@@ -6,3 +6,39 @@ python train_interactive.py
 
 para entrenar el chatbot
 python dialogue_management_model.py
+
+para correr app
+python run_app.py
+
+
+historias faltantes
+ - saludar
+ - despedir
+ - informar-tipo-pago
+ - informar-tienda-horarios
+ - informar-tiempoEntrega
+ - informar-producto-sexo
+ - informar-producto-restock*
+ - informar-producto-repuesto*
+ - informar-producto-calidad*
+ - informar-producto-atributo*
+ - informar-producto
+ - informar-proceso-compra
+ - informar-horario
+ - informar-color-producto
+ - informar-alcance-envios
+ - confirmar-ubicaciones*
+ - confirmar-tipo-pago
+ - informar-ubicaciones
+ - informar-tipo-venta*
+ - informar-proceso-compra-PSE*
+ - informar-envio-empresa*
+ - informar-envio-costo*
+ - informar-contacto*
+ - devolver-gracias
+
+ input_channel = SlackInput('xoxp-562135625030-559955167504-560134184977-e1f4f5b32c29fa81d9476ded23a2191c',
+                            'xoxb-562135625030-560134188337-KuGSywOoV6O0BNm2GZEsVzrO' ,
+                            'pj5uVkM8zMboALwjQqV1mPCe',
+                            True
+                           )

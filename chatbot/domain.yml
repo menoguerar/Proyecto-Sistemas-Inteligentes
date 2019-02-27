@@ -64,19 +64,61 @@ entities:
  - fecha
  - repuestos
  - atributo-gafa
+ - tipo-producto
 
 templates:
   utter_saludar:
     - '¡Hola! ¿Cómo puedo ayudar?'
   utter_despedir:
     - 'Hasta pronto'
-    - 'Adiós :('
+    - 'Adiós.'
   utter_ask_location:
     - '¿En que ubicacion?'
+  utter_informar_tipo_pago:
+    -  'Lo tenemos disponible en Bogotá, desde el barrio Venecia al sur, hasta la 170 de la Autopista Norte. Por favor indíquenos su dirección, su número móvil y el horario en que podemos realizar la entrega.'
+  utter_informar_tienda_horarios:
+    -  'De lunes a viernes de 6.30pm á 8.30pm y los fines de semana de 8.00am á 8.00pm.'
+  utter_informar_tiempoEntrega_fuera:
+    -  'Buen día,para bogotá la entrega es inmediata, fuera de bogota son dos días hábiles, es decir, si se compra mañana llegaría el miércoles.'
+  utter_informar_producto_sexo:
+    -  'sirven tanto para hombre y para mujer'
 
+  utter informar_producto_repuesto:
+    -  'No contamos con los repuestos, solo el kit completo.'
+  utter_informar_producto_calidad:
+    -  'Son Rockbros originales.'
+  utter_informar_proceso_compra:
+    -  'Lo puedes realizar:
+      a) Visitando cualquiera de nuestros locales en Hayuelos y Salitre El Greco
+      b) Por el pago a través de un enlace web de Mercado Pagos que le permite pagar en efectivo por Efecty
+      o Baloto, por tarjeta de débito o por tarjeta de crédito
+      (https://www.mercadopago.com/mco/checkout/start?pref_id=192583938_cd231fd6_78a1_4c76_b350_e2ff87ece864)
+      c) Por Mercado Libre: https://articulo.mercadolibre.com.co/MCO_453032170_gafas_ciclismo_
+      profesionales_rockbros_5_lentes__JM?quantity=1'
+
+  utter_informar_alcance_envios:
+    -  Si! a través de Mercado Envíos de Mercado Libre, o si gusta, realiza la compra indicando que recogerá
+      el producto y se lo enviamos por Envía y ud paga por el valor del transporte cuando reciba el producto.
+      Por su tranquilidad, nosotros le enviaremos el número de guía para su seguimiento.'
+  utter_confirmar_ubicaciones:
+    - 'Puedes pasar de lunes a viernes de 6.30pm á 8.30pm y los fines de semana de 8.00am á 8.00pm, por favor confirmar su hora de llegada al numero 320 3475909'
+
+  utter_confirmar_tipo_pago:
+    - 'Puedes tratar directamente con la opción de Mercado Envíos.
+       Si no figura, podemos enviárselo por otro medio y ud. paga el valor del transporte cuando reciba el producto.
+       Al comprarlo, selecciona la opción de que ud. recoge el producto'
 
 actions:
  - utter_saludar
  - utter_despedir
  - utter_ask_location
- - action_weather
+ - utter_informar_tipo_pago
+ - utter_informar_tienda_horarios
+ - utter_informar_tiempoEntrega_fuera
+ - utter informar_producto_repuesto
+ - utter_informar_producto_calidad
+ - utter_informar_proceso_compra
+ - utter_informar_alcance_envios
+ - utter_confirmar_ubicaciones
+ - utter_confirmar_tipo_pago
+ - actions.action_store

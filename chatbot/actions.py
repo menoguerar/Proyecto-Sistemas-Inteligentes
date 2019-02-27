@@ -4,66 +4,29 @@ from __future__ import unicode_literals
 
 from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet
+import csv
+import pandas
+df = pandas.read_csv('Inventario_Muju.csv')
 
-class ActionWeather(Action):
+class ActionStore(Action):
     def name(self):
-        return 'action_weather'
-        
+        return 'action_store'
+
     def run(self, dispatcher, tracker, domain):
-        loc = tracker.get_slot("tipo-producto")
-        print("<--------------",tracker.get_latest_entity_values)
-        response = "El clima es una mierdaaaaaa en "+mylocation(loc)
+        tipo_prod = tracker.get_slot("tipo-producto")
+        response="gg wp"
+        if (tipo_prod=="gafas"):
+                gafas_r=df[24][4]
+                gafas_a=df[25][4]
+                gafas_n=df[25][4]
+                gafas_b=df[26][4]
+                response = "En este momento contamos con"+ str(gafas_r) +" gafas de color rojo, "+str(gafas_a)+" azules"+ str(gafas_n)+" negras y "+str(gafas_b)+" de color blanco."
+
         dispatcher.utter_message(response)
-        return [SlotSet('location',loc)]
-
-def mylocation(location):
-    return location+"xD"
 
 
-def informar_tipo_pago():
-    return ("Lo tenemos disponible en Bogotá, desde el barrio Venecia al sur, hasta la 170 de la Autopista Norte. Por favor indíquenos su dirección, su número móvil y el horario en que podemos realizar la entrega.")
+        return [SlotSet('tipo-producto',tipo_prod)]
 
-def informar_tienda_horarios():
-    return ("De lunes a viernes de 6.30pm á 8.30pm y los fines de semana de 8.00am á 8.00pm")
-
-def informar_tiempoEntrega_fuera():
-    return ("Buen día,para bogotá la entrega es inmediata, fuera de bogota son dos días hábiles, es decir, si se compra mañana llegaría el miércoles")
-def informar_producto_sexo():
-    return("sirven tanto para hombre y para mujer")
-def informar_producto_restock():
-    return("BAse de datos")
-
-def informar_producto_repuesto():
-     return("No contamos con los repuestos, solo el kit completo")
-def informar_producto_calidad():
-    return("Son Rockbros originales")
-def informar_producto_atributo():
-    return("base de datos")
-def informar_producto(tipo):
-    return("bd tipo prodcuto")
-
-def informar_proceso_compra():
-    return """Lo puedes realizar:
-    a) Visitando cualquiera de nuestros locales en Hayuelos y Salitre El Greco
-    b) Por el pago a través de un enlace web de Mercado Pagos que le permite pagar en efectivo por Efecty
-    o Baloto, por tarjeta de débito o por tarjeta de crédito
-    (https://www.mercadopago.com/mco/checkout/start?pref_id=192583938_cd231fd6_78a1_4c76_b350_e2ff87ece864)
-    c) Por Mercado Libre: https://articulo.mercadolibre.com.co/MCO_453032170_gafas_ciclismo_
-    profesionales_rockbros_5_lentes__JM?quantity=1"""
-
-def informar_color_producto():
-    return "consulta bd"
-def informar_alcance_envios():
-    return"""Si! a través de Mercado Envíos de Mercado Libre, o si gusta, realiza la compra indicando que recogera
-    el producto y se lo enviamos por Envía y ud. Paga por el valor del transporte cuando reciba el producto.
-    Por su tranquilidad, nosotros le enviaremos el número de guía para su seguimiento."""
-def confirmar_ubicaciones():
-    return "Puedes pasar de lunes a viernes de 6.30pm á 8.30pm y los fines de semana de 8.00am á 8.00pm, por favor confirmar su hora de llegada al numero 320 3475909" 
-    
-def confirmar_tipo_pago():
-    return """Puedes tratar directamente con la opción de Mercado Envíos.
-     Si no figura, podemos enviárselo por otro medio y ud. paga el valor del transporte cuando reciba el producto.
-     Al comprarlo, selecciona la opción de que ud. recoge el producto"""
 
 
 #  def tipo_intent(intent):

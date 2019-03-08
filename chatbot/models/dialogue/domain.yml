@@ -4,29 +4,174 @@ actions:
 - utter_saludar
 - utter_despedir
 - utter_ask_location
-- action_weather
+- utter_ask_tipo_producto
+- utter_informar_tipo_pago
+- utter_informar_tienda_horarios
+- utter_informar_tiempoEntrega_fuera
+- utter informar_producto_repuesto
+- utter_informar_producto_calidad
+- utter_informar_proceso_compra
+- utter_informar_alcance_envios
+- utter_confirmar_ubicaciones
+- utter_confirmar_tipo_pago
+- action_store
 config:
   store_entities_as_slots: true
 entities:
 - location
+- horario
+- tipo-pago
+- color
+- empresa
+- accion-final
+- calidad
+- sexo
+- fecha
+- repuestos
+- atributo-gafa
+- tipo-producto
 forms: []
 intents:
 - saludar:
     use_entities: true
 - despedir:
     use_entities: true
-- informar:
+- informar-tipo-pago:
+    use_entities: true
+- informar-tienda-horarios:
+    use_entities: true
+- informar-tiempoEntrega:
+    use_entities: true
+- informar-producto-sexo:
+    use_entities: true
+- informar-producto-restock:
+    use_entities: true
+- informar-producto-repuesto:
+    use_entities: true
+- informar-producto-calidad:
+    use_entities: true
+- informar-producto-atributo:
+    use_entities: true
+- informar-producto:
+    use_entities: true
+- informar-proceso-compra:
+    use_entities: true
+- informar-horario:
+    use_entities: true
+- informar-color-producto:
+    use_entities: true
+- informar-alcance-envios:
+    use_entities: true
+- confirmar-ubicaciones:
+    use_entities: true
+- confirmar-tipo-pago:
+    use_entities: true
+- informar-ubicaciones:
+    use_entities: true
+- informar-tipo-venta:
+    use_entities: true
+- informar-proceso-compra-PSE:
+    use_entities: true
+- informar-envio-empresa:
+    use_entities: true
+- informar-envio-costo:
+    use_entities: true
+- informar-contacto:
+    use_entities: true
+- devolver-gracias:
     use_entities: true
 slots:
+  accion-final:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  atributo-gafa:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  calidad:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  color:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  empresa:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  fecha:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  horario:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   location:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  repuestos:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  sexo:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  tipo-pago:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  tipo-producto:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
+  utter informar_producto_repuesto:
+  - text: No contamos con los repuestos, solo el kit completo.
   utter_ask_location:
   - text: ¿En que ubicacion?
+  utter_ask_tipo_producto:
+  - text: ¿En que Tipo de producto estas interesado?
+  utter_confirmar_tipo_pago:
+  - text: Puedes tratar directamente con la opción de Mercado Envíos. Si no figura,
+      podemos enviárselo por otro medio y ud. paga el valor del transporte cuando
+      reciba el producto. Al comprarlo, selecciona la opción de que ud. recoge el
+      producto
+  utter_confirmar_ubicaciones:
+  - text: Puedes pasar de lunes a viernes de 6.30pm á 8.30pm y los fines de semana
+      de 8.00am á 8.00pm, por favor confirmar su hora de llegada al numero 320 3475909
   utter_despedir:
   - text: Hasta pronto
-  - text: Adiós :(
+  - text: Adiós.
+  utter_informar_alcance_envios:
+  - text: Si! a través de Mercado Envíos de Mercado Libre, o si gusta, realiza la
+      compra indicando que recogerá el producto y se lo enviamos por Envía y ud paga
+      por el valor del transporte cuando reciba el producto. Por su tranquilidad,
+      nosotros le enviaremos el número de guía para su seguimiento.'
+  utter_informar_proceso_compra:
+  - text: 'Lo puedes realizar: a) Visitando cualquiera de nuestros locales en Hayuelos
+      y Salitre El Greco b) Por el pago a través de un enlace web de Mercado Pagos
+      que le permite pagar en efectivo por Efecty o Baloto, por tarjeta de débito
+      o por tarjeta de crédito (https://www.mercadopago.com/mco/checkout/start?pref_id=192583938_cd231fd6_78a1_4c76_b350_e2ff87ece864)
+      c) Por Mercado Libre: https://articulo.mercadolibre.com.co/MCO_453032170_gafas_ciclismo_
+      profesionales_rockbros_5_lentes__JM?quantity=1'
+  utter_informar_producto_calidad:
+  - text: Son Rockbros originales.
+  utter_informar_producto_sexo:
+  - text: sirven tanto para hombre y para mujer
+  utter_informar_tiempoEntrega_fuera:
+  - text: Buen día,para bogotá la entrega es inmediata, fuera de bogota son dos días
+      hábiles, es decir, si se compra mañana llegaría el miércoles.
+  utter_informar_tienda_horarios:
+  - text: De lunes a viernes de 6.30pm á 8.30pm y los fines de semana de 8.00am á
+      8.00pm.
+  utter_informar_tipo_pago:
+  - text: Lo tenemos disponible en Bogotá, desde el barrio Venecia al sur, hasta la
+      170 de la Autopista Norte. Por favor indíquenos su dirección, su número móvil
+      y el horario en que podemos realizar la entrega.
   utter_saludar:
   - text: ¡Hola! ¿Cómo puedo ayudar?

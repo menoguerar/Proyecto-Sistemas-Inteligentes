@@ -7,21 +7,22 @@ from rasa_core_sdk.events import SlotSet
 import csv
 import pandas
 df = pandas.read_csv('Inventario_Muju.csv')
-
+#df = df.values
 class ActionStore(Action):
     def name(self):
         return 'action_store'
 
     def run(self, dispatcher, tracker, domain):
         tipo_prod = tracker.get_slot("tipo-producto")
-        response="gg wp"
-        if (tipo_prod=="gafas"):
-                gafas_r=df[24][4]
-                gafas_a=df[25][4]
-                gafas_n=df[25][4]
-                gafas_b=df[26][4]
-                response = "En este momento contamos con"+ str(gafas_r) +" gafas de color rojo, "+str(gafas_a)+" azules"+ str(gafas_n)+" negras y "+str(gafas_b)+" de color blanco."
 
+        gafas_r=8
+        gafas_a=9
+        gafas_n=10
+        gafas_b=5
+
+
+        response = "En este momento contamos con "+ str(gafas_r) +" gafas de color rojo, "+str(gafas_a)+" azules "+ str(gafas_n)+" negras y "+str(gafas_b)+" de color blanco."
+        #response = "hay !!"
         dispatcher.utter_message(response)
 
 
